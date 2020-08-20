@@ -10,15 +10,18 @@
         android:id="@+id/id_editTitle_Update"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/enter_wish_title"
         android:inputType="textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/id_editDate_Update"
@@ -27,19 +30,23 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/enter_wish_date"
+        android:importantForAutofill="no"
         android:inputType="date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="@+id/id_editTitle_Update"
         app:layout_constraintStart_toStartOf="@+id/id_editTitle_Update"
-        app:layout_constraintTop_toBottomOf="@+id/id_editTitle_Update"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/id_editTitle_Update" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:backgroundTint="#250404"
         android:text="@string/update"
+        android:textColor="@color/cardview_light_background"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="276dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="276dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
