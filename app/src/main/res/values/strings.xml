@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">WishList</string>
+    <string name="title">Title:</string>
+    <string name="date">Date:</string>
+    <string name="enter_wish_list_title">Enter wish list title</string>
+    <string name="enter_date">Enter date</string>
+    <string name="save">Save</string>
+    <string name="enter_wish_title">Enter wish title</string>
+    <string name="enter_wish_date">Enter wish date</string>
+    <string name="update">Update</string>
 </resources>
