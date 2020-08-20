@@ -7,7 +7,10 @@
     tools:context=".ui.MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wish_list_recycler_view"
         android:layout_width="match_parent"
+        tools:listitem="@layout/item_wish"
+        tools:itemCount="10"
         android:layout_height="match_parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
