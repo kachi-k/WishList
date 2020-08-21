@@ -9,9 +9,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/wish_list_recycler_view"
         android:layout_width="match_parent"
-        tools:listitem="@layout/item_wish"
+        android:layout_height="match_parent"
         tools:itemCount="10"
-        android:layout_height="match_parent" />
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="-47dp"
+        tools:listitem="@layout/item_wish" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_wishlist"

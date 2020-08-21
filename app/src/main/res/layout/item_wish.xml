@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/id_title"
+            android:id="@+id/wish_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title"
@@ -31,7 +31,7 @@
             android:textColor="#250404" />
 
         <TextView
-            android:id="@+id/id_date"
+            android:id="@+id/wish_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
