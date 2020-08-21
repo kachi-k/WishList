@@ -28,12 +28,12 @@ class WishAdapter(private val wishlist: List<Wish>) : RecyclerView.Adapter<WishA
     override fun onBindViewHolder(holder: WishViewHolder, position: Int) {
         val currentItem = wishlist[position]
 
-        holder.textView.text = currentItem.title
-        holder.textView2.text = currentItem.date
+        holder.wishTitle.text = currentItem.title
+        holder.wishDate.text = currentItem.date
     }
 
     class WishViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
-        val textView : TextView = itemView.wish_title
-        val textView2 : TextView = itemView.wish_date
+        val wishTitle : TextView = itemView.wish_title
+        val wishDate : TextView = itemView.wish_date
     }
 }
