@@ -18,7 +18,7 @@ import org.w3c.dom.Text
 class WishAdapter(private val wishlist: List<Wish>) : RecyclerView.Adapter<WishAdapter.WishViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WishViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(
-            R.layout.activity_main,
+            R.layout.item_wish,
         parent, false)
         return WishViewHolder(itemView)
     }
