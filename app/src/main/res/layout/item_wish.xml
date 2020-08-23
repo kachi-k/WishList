@@ -16,7 +16,7 @@
         app:cardBackgroundColor="#ffffff"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
-        app:contentPadding="20dp"
+        app:contentPadding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

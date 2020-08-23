@@ -38,17 +38,20 @@
         app:layout_constraintTop_toBottomOf="@+id/id_editTitle" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/save_button"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="171dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="100dp"
         android:background="@android:color/white"
         android:backgroundTint="#250404"
         android:text="@string/save"
         android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_editDate"
         tools:ignore="MissingConstraints" />
 
