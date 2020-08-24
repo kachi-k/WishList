@@ -7,7 +7,7 @@
     tools:context=".ui.AddNewWish">
 
     <EditText
-        android:id="@+id/id_editTitle"
+        android:id="@+id/title_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/id_editDate"
+        android:id="@+id/date_field"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -33,9 +33,9 @@
         android:importantForAutofill="no"
         android:inputType="date"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintEnd_toEndOf="@+id/id_editTitle"
-        app:layout_constraintStart_toStartOf="@+id/id_editTitle"
-        app:layout_constraintTop_toBottomOf="@+id/id_editTitle" />
+        app:layout_constraintEnd_toEndOf="@+id/title_field"
+        app:layout_constraintStart_toStartOf="@+id/title_field"
+        app:layout_constraintTop_toBottomOf="@+id/title_field" />
 
     <Button
         android:id="@+id/save_button"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_editDate"
+        app:layout_constraintTop_toBottomOf="@+id/date_field"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

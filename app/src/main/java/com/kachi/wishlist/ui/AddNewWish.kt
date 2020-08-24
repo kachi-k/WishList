@@ -3,9 +3,10 @@ package com.kachi.wishlist.ui
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.kachi.wishlist.R
-import kotlinx.android.synthetic.main.item_wish.*
+import com.kachi.wishlist.model.Wish
 
 class AddNewWish : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,12 +15,25 @@ class AddNewWish : AppCompatActivity() {
 
 
         val saveBtn: Button = findViewById(R.id.save_button)
-        saveBtn.setOnClickListener{
+        val titleField = findViewById<EditText>(R.id.title_field)
+        val dateField = findViewById<EditText>(R.id.date_field)
 
-            val intent: Intent = Intent(this, MainActivity::class.java)
+        saveBtn.setOnClickListener {
+            // get the user input
+            val title = titleField.text.toString()
+            val date = dateField.text.toString()
 
-            intent.putExtra("wish", title)
+            // Create a new wish from the user input
+            val wish = Wish(title, date)
 
+            // create and intent to return the data
+            val resultIntent = Intent()
+
+            resultIntent.putExtra("newWish", wish)
+
+            setResult(RESULT_OK, resultIntent)
+
+            finish()
         }
     }
 }
