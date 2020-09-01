@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         val fab: FloatingActionButton = findViewById(R.id.fab_wishlist)
         fab.setOnClickListener {
             val intent = Intent(this, AddNewWish::class.java)
-            startActivityForResult(intent, NEW_WISH_REQUEST_CODE)
+            startActivityForResult(intent, NEW_WISH_REQUEST_CODE) //?
         }
     }
 

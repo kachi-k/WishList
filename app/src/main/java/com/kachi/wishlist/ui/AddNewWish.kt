@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.kachi.wishlist.R
 import com.kachi.wishlist.model.Wish
@@ -12,6 +13,11 @@ class AddNewWish : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_new_wish)
+
+        supportActionBar!!.title = "Add a New Wish"
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+
 
 
         val saveBtn: Button = findViewById(R.id.save_button)
@@ -23,10 +29,22 @@ class AddNewWish : AppCompatActivity() {
             val title = titleField.text.toString()
             val date = dateField.text.toString()
 
+            if (title.isEmpty()) {
+                Toast.makeText(this, "Title required", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (date.isEmpty()) {
+                Toast.makeText(this, "Date required", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+
+
             // Create a new wish from the user input
             val wish = Wish(title, date)
 
-            // create and intent to return the data
+            // create an intent to return the data
             val resultIntent = Intent()
 
             resultIntent.putExtra("newWish", wish)
@@ -35,6 +53,11 @@ class AddNewWish : AppCompatActivity() {
 
             finish()
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
 
