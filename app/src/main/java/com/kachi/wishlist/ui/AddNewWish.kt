@@ -14,12 +14,6 @@ class AddNewWish : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_new_wish)
 
-        supportActionBar!!.title = "Add a New Wish"
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-
-
-
-
         val saveBtn: Button = findViewById(R.id.save_button)
         val titleField = findViewById<EditText>(R.id.title_field)
         val dateField = findViewById<EditText>(R.id.date_field)
@@ -55,9 +49,5 @@ class AddNewWish : AppCompatActivity() {
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
-    }
 }
 

@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.EditWishList"></activity>
-        <activity android:name=".ui.AddNewWish" />
+        <activity android:name=".ui.AddNewWish"
+            android:parentActivityName=".ui.MainActivity"
+            android:label="Add New Wish"/>
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
